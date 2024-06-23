@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+  }
+  
+  /* Typography */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+
+.over_all_container{
+
+    min-height:100vh;
+    min-width: 100vw;
+    background-color:aqua; 
+    display: flex;
+    flex-direction: column;
+}
+
+.over_all_container > div:first-of-type{
+    display:flex;
+    max-width:100%;
+    padding:20px;
+    column-gap: 20px;
+    
+}
+.over_all_container>div:first-of-type>div:first-of-type{
+    border:2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding:10px;
+    max-width:50%;
+}
+
+
+.over_all_container>div:first-of-type>div:last-of-type{
+    min-width:50%;
+    border:none ;
+}
+.over_all_container>div:first-of-type>div:last-of-type>div:first-of-type{
+    min-width:100%;
+}
+
+
+.star_color{
+color: red;
+}
+
+.form_input_elements{
+    display: flex;
+    width:100%;
+    column-gap: 50px;
+    align-self: flex-start;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 15px;
+}
+.form_input_elements>label:first-of-type{
+    max-width: 50%;
+    white-space: nowrap;
+}
+
+
+.form_input_elements>input:only-of-type{
+    width: 50%;
+}
+
+
+.form_input_elements>select:only-of-type{
+    border: none;
+}
+
+.accordion-body > div:nth-of-type(2){
+ 
+    display: flex;
+    align-items: center;
+    min-width:100%;
+    column-gap: 50%;
+    justify-content: space-evenly;
+}
+
+.form_input_elements> span:last-of-type {
+    min-width:50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.radio{
+   display: flex;
+   column-gap: 10px;
+   align-items: center;
+}
+
+
+
+
+.footer_container{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+
+
+.abcd {
+  display:flex;
+  column-gap: 20px;
+  max-width: 70%;
+
+}
+
+
+@media(max-width:992px){
+    
+    .abcd {
+        display:flex;
+        column-gap: 20px;
+        min-width: 100%;
+        flex-grow: 1;
+        flex-wrap: wrap;
+      
+      }
+}
+
+
+
+.abcd1{
+   background-color: aliceblue;
+   width: fit-content;
+   padding:3px;
+   border-radius: 3px;
+   white-space: nowrap;
+  
+  }
+
+.span_con2 {
+    display:flex;
+    column-gap: 20px;
+    max-width: 30%;
+  
+  }
+    
+
+  .span_con2 button:first-of-type{
+    background-color: aliceblue;
+    color: red;
+    border-radius:5px;
+  }
+  .span_con2 button:last-of-type{
+    background-color: purple;
+    color:white;
+    padding:2px;
+    border-radius:5px;
+    
+  }
+
+  button {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border:none;
+    padding-left: 5px;
+    white-space: nowrap;
+    flex-direction: column;
+  
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* below for mobile  and tablet divices */
+
+@media ((max-width:767px )){
+
+    .over_all_container > div:first-of-type{
+        display:flex;
+        flex-direction: column;
+        min-width:100%;
+        padding:20px;
+        row-gap: 20px;
+        
+    }
+
+
+
+
+    .over_all_container>div:first-of-type>div:first-of-type{
+        border:10px solid black;
+        box-sizing: border-box;
+        padding:10px;
+        min-width:100%;
+    }
+
+
+    .over_all_container>div:first-of-type>div:last-of-type{
+        min-width:100%;
+    }
+
+
+
+    .form_input_elements{
+        display: flex;
+        flex-direction: column;
+        min-width:100%;
+        column-gap: 50px;
+        align-self: flex-start;
+        box-sizing: border-box;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .form_input_elements>input:only-of-type{
+        min-width: 100%;
+        row-gap: 10em;
+        border-radius: 5px;
+        /* align-self: flex-start; */
+    }
+
+
+
+    .form_input_elements> span:last-of-type {
+        min-width:100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .radio{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        align-items: center;
+     }
+     .form_input_elements>label:first-of-type{
+        max-width: 50%;
+        white-space: wrap;
+        /* align-self: flex-start; */
+    }
+
+
+
+
+    
+.footer_container{
+    min-width:100%;
+    display:flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    column-gap:10px;
+    align-items: center;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
